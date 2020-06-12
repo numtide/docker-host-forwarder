@@ -15,7 +15,7 @@ socat(1) is preinstalled, making it trivial to forward traffic.
 To start a container forwarding UDP port 8125 to the host port 8125, use the following command line:
 
 ```sh
-$ docker run -d draganm/docker-host-forwarder socat UDP4-RECVFROM:8125,fork UDP4-SENDTO:host.docker.internal:8125
+$ docker run -d dmilhdef/docker-host-forwarder socat UDP4-RECVFROM:8125,fork UDP4-SENDTO:host.docker.internal:8125
 ```
 
 
